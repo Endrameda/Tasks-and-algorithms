@@ -1,4 +1,6 @@
-// Алгоритм смещивания массива по алгоритму Фишера Ятеса который называется Fisher - Yates Shuffle
+/**
+ * Алгоритм смещивания массива по алгоритму Фишера Ятеса который называется Fisher - Yates Shuffle
+ * */
 
 let arr = [10, 3, 4, 5, 6]
 
@@ -8,7 +10,9 @@ function shuffleArray(array) {
     let currentIndex = array.length;
     let temporaryValue;
     let randomIndex;
-
+    /**
+     *  Цыкл проходится по индексам массива и меняет их местами
+     * */
     while (0 !== currentIndex) {
         // Берем рандомный индекс в массиве
         randomIndex = Math.floor(Math.random() * currentIndex)
